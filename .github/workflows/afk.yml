@@ -1,0 +1,24 @@
+name: Minecraft AFK Bot
+
+on:
+  workflow_dispatch:
+
+jobs:
+  afk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - name: 📥 Clone repo
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 📦 Install dependencies
+        run: npm install
+
+      - name: 🤖 Start AFK Bot
+        run: npm start
