@@ -5,8 +5,8 @@ function startBot() {
 
   setTimeout(() => {
     const bot = mineflayer.createBot({
-      host: 'adamad1755.aternos.me',
-      port: 59948,
+      host: 'Chorfa1.aternos.me',
+      port: 51996,
       username: 'AFK_BOT',
       version: '1.20.1'
     });
